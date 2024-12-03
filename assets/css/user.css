@@ -1,0 +1,75 @@
+
+body {
+	background: #262a2b;
+}
+
+.container{
+  padding: 20px;
+  color: darkgray;
+}
+
+.listContainer {
+
+  box-shadow:  rgb(217 217 217 / 9%) -17px -9px 6px 0px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 11px 8px 16px;
+}
+
+.userList {
+
+  display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 80px;
+      text-align: center;
+}
+.text {
+
+  padding:10px 16px;
+}
+
+
+.imageContainer {
+  display: inline-block;
+  transition: transform 0.5s ease; 
+  transform: rotate(0deg) scale(1);
+
+}
+
+.imageContainer:hover img {
+  animation: rotateInfinite 2s linear infinite;
+
+}
+
+
+.text {
+  font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(151deg, #afafaf, #4c4c4c);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+
+
+@keyframes rotateInfinite {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ @media screen and (min-width: 1280px)  {
+  
+
+  .userList {
+
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+        text-align: center;
+  }
+}
