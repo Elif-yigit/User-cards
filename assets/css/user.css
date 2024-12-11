@@ -50,8 +50,18 @@ body {
     text-align: center;
 }
 
+.young:hover{
+  color:red ;
+}
 
+.middle {
 
+  color: bisque;
+}
+
+.old {
+  color:greenyellow;
+}
 
 @keyframes rotateInfinite {
   from {

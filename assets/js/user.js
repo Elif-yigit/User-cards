@@ -32,6 +32,19 @@ async function add() {
     </div>
     `
   }
+
+  const userCard = userList.lastElementChild;
+ console.log(userList.lastElementChild);
+  if( data.age <= 25) {
+   
+    userCard.classList.add('.young');
+  } else if (data.age > 25 && data.age <=40) {
+
+    userCard.classList.add('.middle');
+  } else {
+   
+    userCard.classList.add('.old');
+  }
   
   
 }
