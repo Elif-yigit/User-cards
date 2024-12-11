@@ -1,5 +1,7 @@
 const userList = document.querySelector('.userList');
 
+
+
 async function add() {
 
   
@@ -36,3 +38,13 @@ async function add() {
 
 
 add();
+
+
+window.addEventListener('load', function (){
+
+ const music = this.document.querySelector('#backgroundMusic');
+ music.play().catch(function(error){
+
+  console.log('Müzik Çalınamadı', error);
+ });
+});
